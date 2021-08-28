@@ -1,0 +1,87 @@
+.card {
+  max-width: 270px;
+}
+
+@media screen and (max-width: 989px) {
+  .card {
+    max-width: 420px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 339px;
+  }
+}
+
+.card__image {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 29px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.card__heading {
+  margin: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 320px) {
+  .card__heading {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.card__like-button {
+  background: url(../../images/save1.svg) no-repeat;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+
+.card__like-button_disabled {
+  background: url(../../images/save1d.svg);
+}
+
+.card__like-button:hover {
+  opacity: 30%;
+  transition: opacity 0.1s linear 0s;
+}
+
+.card__like-button_delete {
+  background: url(../../images/d1.svg);
+  opacity: 0;
+}
+
+.card__like-button_delete:hover {
+  opacity: 1;
+  transition: opacity 0.2s linear 0s;
+  visibility: visible;
+}
+
+.card__film-duration {
+  margin: 0;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #a0a0a0;
+}
+
+@media screen and (max-width: 320px) {
+  .card__film-duration {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

@@ -1,0 +1,131 @@
+.profile {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 410px;
+  min-height: 77vh;
+  margin: auto;
+  padding: 70px 0 40px 0;
+}
+
+@media screen and (max-width: 320px) {
+  .profile {
+    padding: 70px 30px 40px 30px;
+  }
+}
+
+.profile__tab {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 220px;
+}
+
+@media screen and (max-width: 340px) {
+  .profile__tab {
+    margin: 0;
+  }
+}
+
+.profile__heading {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  margin-bottom: 123px;
+}
+
+@media screen and (max-width: 340px) {
+  .profile__heading {
+    margin-bottom: 80px;
+  }
+}
+
+.profile__row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 17px;
+}
+
+.profile__row:last-of-type {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.profile__info {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  text-align: right;
+  background: none;
+}
+
+.profile__info:disabled {
+  background: #d1cfd7;
+  outline: none;
+  border: none;
+}
+
+.profile__name {
+  border: 1px solid #d1cfd7;
+  border-radius: 3px;
+}
+
+.profile__email {
+  border: 1px solid #d1cfd7;
+  border-radius: 3px;
+}
+
+.profile__button {
+  outline: none;
+  border: none;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 320px) {
+  .profile__button {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.profile__button:hover {
+  opacity: 30%;
+  transition: opacity 0.1s linear 0s;
+}
+
+.profile__button_editing {
+  background-color: #3456f3;
+  padding: 13px 0;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.profile__exit-button {
+  color: #ff004d;
+  margin-top: 0;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 320px) {
+  .profile__exit-button {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.profile__exit-button_hidden {
+  display: none;
+}

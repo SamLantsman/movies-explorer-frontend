@@ -1,0 +1,48 @@
+.card-list {
+  display: grid;
+  max-width: 1140px;
+  gap: 38px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  padding: 0 70px 0 70px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .card-list {
+    padding: 0 30px 0 30px;
+    gap: 30px 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card-list {
+    padding: 0 10px 0 10px;
+    row-gap: 34px;
+  }
+}
+
+.card-list__more-button {
+  grid-column: 1 / -1;
+  outline: none;
+  background-color: #f9f9f9;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  height: 36px;
+  border: none;
+  padding: 0;
+  margin-bottom: 80px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .card-list__more-button {
+    margin-top: 26px;
+  }
+}
+
+.card-list__more-button:hover {
+  opacity: 30%;
+  transition: opacity 0.1s linear 0s;
+}
